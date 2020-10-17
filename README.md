@@ -77,11 +77,10 @@ Selanjutnya download software git di http://git-scm/downloads, sesuaikan dengan 
 
 # Penggunaan Dasar Git
 Setelah terinstall kita ujicoba terlebih dahulu fungsi dasar yang ada di git. Ada berapa fungsi dasar yang terdapat dalam git. Untuk penggunaan git pertama masuk ke folder yang akan digunakan. Klik kanan dan pilih Git Bash here.
-![1_zSJREODl8VmrkH7xv96SMg](https://user-images.githubusercontent.com/72791776/96332666-91f43300-108f-11eb-8824-e6a494b49719.png)
+![2_qJJEt_32_tJHhGX8_66trw](https://user-images.githubusercontent.com/72791776/96332668-93bdf680-108f-11eb-9e37-766df85f71ee.png)
 Setelah muncul maka dilakukan configurasi antara git dengan akun github yg telah dibuat dengan menulis perintah :
 git config --global example@gmail.com
 git config --global "name"
-![2_qJJEt_32_tJHhGX8_66trw](https://user-images.githubusercontent.com/72791776/96332668-93bdf680-108f-11eb-9e37-766df85f71ee.png)
 
 
 
