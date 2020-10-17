@@ -63,6 +63,27 @@ Setelah proses instalasi selesai, Anda perlu mengecek apakah instalasi Git berha
 ![Screenshot_13](https://user-images.githubusercontent.com/72791776/95843126-8a701980-0d71-11eb-94eb-d265f7bb253f.png)
 
 # Cara Penggunaan Git
+Pada tulisan kali ini saya akan berbagi informasi tentang git. Mungkin bukan sesuatu hal yang baru karena teknologi ini sudah sering dipakai oleh para developer. Tapi ini merupakan hal yang baru dipelajari oleh saya dan mungkin akan berguna untuk para pemula yang sedang belajar tentang git. Selain untuk berbagi informasi tulisan ini juga merupakan sebuah tugas yang diberikan oleh mentor di tempat saya mengikuti boothcamp dan pelatihan programming. Oke skip dengan curhatnya dan mulai ke materi.
+## Pengertian Git
+GIT merupakan sebuah Version Control System (VCS) yang digunakan dalam tim pengembangan perangkat lunak untuk bekerja bersama. Version Control maksudnya sistem Git akan mencatat setiap perubahan yang terjadi pada source code kita sehingga memungkinkan untuk mengambil kembali source code lama jika suatu saat kita ingin kembali ke versi berapapun dari aplikasi yang pernah kita tulis.(http://www.tutorial-webdesign.com)
+Dari pengertian diatas dapat ditarik kesimpulan bahwa git ini digunakan sebagai tempat untuk menyimpan dan merekam history dari program yang telah dibuat. Semua perubahan dapat terlihat ketika menggunakan git. Selain itu penggunaan git sangat membantu saat beberapa developer membuat aplikasi web secara bersamaan. Misalkan ada yang membuat bagian back-end dan ada yang membuat bagian front-end ketika pembuatan nya dilakukan secara terpisah lalu kemudian di gabungkan dapat menggunakan git.
+Program tersebut akan di simpan kedalam repository git atau istilah nya adalah commit. Setiap melakukan satu perubahan berarti kita melakukan satu commit. Walaupun kita melakukan perubahan sampai 10 kali versi aselinya tidak akan hilang. Yang perlu diingat adalah setiap kita melakukan commit maka kita harus membuat commit yang representatif agar bisa dibaca oleh orang lain dan tidak membingungkan kita sendiri.
+Commit yang telah dilakukan hanya akan disimpan pada repository lokal yang ada di komputer. Agar dapat diakses bersama-sama oleh developer lain maka dibutuhkan suatu repository central. Sesuai dengan saya pelajari web yang menyediakan jasa repository central untuk git adalah Github.com. Mungkin ada web yang lain yang menyediakan jasa repository central seperti Github misalkan gitlab atau tfs. Tapi dalam tulisan kali ini saya hanya akan menjelaskan penggunaan git dan Github saja.
+
+# Membuat akun di Github
+Sebelum menggunakan git kita sebaiknya membuat akun github terlebih dahulu karena akun github ini yang akan dijadikan sebagai repository central nya. Untuk sign up di github sangat mudah seperti sign up di instagram atau media sosial lainnya. Yang penting jangan sampai lupa email, username dan password nya. Kita tinggal masuk ke website www.github.com.
+# Install Git
+Selanjutnya download software git di http://git-scm/downloads, sesuaikan dengan sistem operasi yang digunakan, disini saya menggunakan operasi windows. Setelah di download maka lakukan instalasi software seperti instalasi pada umunya sampai selesai.
+
+# Penggunaan Dasar Git
+Setelah terinstall kita ujicoba terlebih dahulu fungsi dasar yang ada di git. Ada berapa fungsi dasar yang terdapat dalam git. Untuk penggunaan git pertama masuk ke folder yang akan digunakan. Klik kanan dan pilih Git Bash here.
+![1_zSJREODl8VmrkH7xv96SMg](https://user-images.githubusercontent.com/72791776/96332666-91f43300-108f-11eb-8824-e6a494b49719.png)
+Setelah muncul maka dilakukan configurasi antara git dengan akun github yg telah dibuat dengan menulis perintah :
+git config --global example@gmail.com
+git config --global "name"
+![2_qJJEt_32_tJHhGX8_66trw](https://user-images.githubusercontent.com/72791776/96332668-93bdf680-108f-11eb-9e37-766df85f71ee.png)
+
+
 
 
 
