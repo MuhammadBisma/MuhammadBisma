@@ -81,6 +81,93 @@ Setelah terinstall kita ujicoba terlebih dahulu fungsi dasar yang ada di git. Ad
 Setelah muncul maka dilakukan configurasi antara git dengan akun github yg telah dibuat dengan menulis perintah :
 git config --global example@gmail.com
 git config --global "name"
+![3_ufJpgwG-n5jmZwt8Sj3UlQ](https://user-images.githubusercontent.com/72791776/96332669-94568d00-108f-11eb-9724-ca32186d7ebb.png)
+Penggunaan git mungkin sama seperti cmd kalo di windows kalo yang memakai linux mungkin lebih terbiasa. Beberapa perintah dasar di git adalah :
+mkdir <nama folder> #untuk membuat folder
+cd <nama folder>    #Untuk masuk masuk kedalam folder
+cd ..               #Untuk mundur ke folder sebelumnya
+ls                  #Untuk melihat file yang ada di dalam folder
+ls-al               #Untuk melihat folder yang ada dan di hidden
+touch               #Untuk menambah folder baru
+Vim                 #Untuk nulis ke file
+Esc lalu shift+w    #Untuk save hasil yang telah ditulis
+Esc lalu shift+x    #Untuk save dan keluar folder
+Cat                 #Untuk print di git bash nya
+Rm                  #Untuk utk hapus file
+Mv                  #Untuk mindahin isi dan ganti file
+code/code .         #Untuk membuka file .py atau coding yang dibuat
+Rm - r              #Untuk hapus directory
+Rm -f               #Untuk hapus paksa
+
+# Penggunaan Git pada Visual Studio Code
+Setelah mengetahui penggunaan dasar dari git. Maka selanjutnya saya akan menggunakan perintah git tersebut di visual studio code. Sebenarnya bisa saja untuk commit code di git nya langsung tetapi karena waktu belajar saya langsung menggunakan visual studio code maka git bashnya hanya digunakan untuk membuka code dan selanjutnya untuk commit akan dilakukan di visual studio code.
+Pertama buka git bash kemudian masuk ke folder yang akan dimasukan ke repository git dengan perintah yang telah dipelajari. Setelah itu buka dengan perintah code<spasi><titik>. Karena kalo hanya git repository nya lokal maka saya masukan dulu code yang telah dibuat ke github agar masuk ke repository central dan dapat dilihat oleh developer lain.
+Memasukan code ke dalam Github
+Pertama login dengan email dan password yang telah di daftarkan. Kemudian buat repository dengan mengklik tanda + dan pilih new repository.
+![4_0DdCCZ9Cvg0_dLvaX4e9Fw](https://user-images.githubusercontent.com/72791776/96332670-94568d00-108f-11eb-8522-97a442db7831.png)
+Setelah itu masukan nama repository yang akan dijadikan sebagai tempat code yang telah dibuat .
+![5_FkbCp_Q6cIVf4Q9UaSxHSw](https://user-images.githubusercontent.com/72791776/96332672-94ef2380-108f-11eb-975a-c4fa4899442c.png)
+Kalo sudah diisi nama repository nya lalu create repository. Maka akan muncul seperti gambar dibawah ini.
+![6_4uIOLB01ABB2EHh6mhDppQ](https://user-images.githubusercontent.com/72791776/96332673-9587ba00-108f-11eb-9b6e-80025c5ac82f.png)
+Kemudian setelah dibuat di github respository nya lalu kembali lagi ke visual studio code. Kemudian buat repository di git dengan memasukan perintah :
+git init
+![7_R-_S_QWzHmUC8ixcgOjPfA](https://user-images.githubusercontent.com/72791776/96332674-96b8e700-108f-11eb-96e4-abcced6e92ac.png)
+Perintah ini akan membuat repository dengan nama git dan akan tersembunyi file nya. Yang harus diperhatikan yaitu apabila sudah pernah membuat git di folder tersebut maka tidak bisa lagi membuat git karena akan saling menimpa dsan akan konflik. Lalu perintah selanjutnya yaitu :
+
+git add .
+
+Perintah ini merupakan perintah yang akan menambah file ke github. Selanjutnya yaitu :
+
+git commit -m "initialization commit"
+
+Perintah diatas sebagai commit yang pertama . Untuk penambahan commit harus diperhatikan karena akan menjadi history setiap perubahan. Selanjutnya yaitu ;
+
+git remote add origin https://github.com/cecepaf18/Tugas-2.git
+
+Perintah diatas yaitu perintah untuk dapat menghubungkan dari repository lokal ke repository central yaitu github. Yang terkahir yaitu :
+
+git push origin master 
+
+Perintah ini yang akan memasukan program yang telah dibuat dan tersimpan di git repository lokal ke repository central yaitu github dan bisa diakses oeh developer yang lain. Tunggu hingga proses pengiriman file berhasil dan 100% terkirim semuanya.
+![8_DuTFkdlvL2W9DvwlLH7WbA](https://user-images.githubusercontent.com/72791776/96332675-96b8e700-108f-11eb-8aa4-cfe892fe7863.png)
+Apabila telah selesai dan mencapai 100% maka lihat ke github nya kalo berhasil maka semua file akan ada di dalam github. Seperti gambar di bawah ini.
+![9_nATajGhdlQwXJaD_gr-xQw](https://user-images.githubusercontent.com/72791776/96332676-9882aa80-108f-11eb-9d19-26658ecb52d1.png)
+Karena belum di tambahkan README maka kita tambah kan dengan menekan tombol Add a README. README ini merupakan keterangan mengenai program yang telah dibuat. Caranya bisa menambahkan secara langsung atau juga bisa ditambahkan di visual code nya dengan menambahkan file README.md
+Setelah dibuat README di visual studio code maka selanjutnya yaitu kita upload ke github dengan dengan perintah yang sama.
+
+git add .
+git commit -m "edit commit"
+git push origin master
+![10_AJq6C3UN6cXWb5aqHie4qA](https://user-images.githubusercontent.com/72791776/96332679-99b3d780-108f-11eb-968b-b99a8a9479eb.png)
+Yang perlu diperhatikan yaitu ketika sudah merubah code maka harus di save terlebih dahulu agar bisa tampil di github. Ketika kita akan banyak melakukan perubahan kita bisa membuat branch lain agar tidak langsung merubah di master nya. Perintah untuk membuat branch baru yaitu :
+
+git branch <name>
+atau 
+git checkout -b <nama branch lain> #untuk menambah branch
+
+Untuk penulisan nama bebas tapi kalo ada dua suku kata maka harus dipisahkan dengan ( _ ) garis bawah. Untuk mengecek ada berapa banyak branch perintahnya yaitu:
+
+git branch
+![11_ETPKqnoMIHBhxgznRs6vJQ](https://user-images.githubusercontent.com/72791776/96332681-9b7d9b00-108f-11eb-9b2e-23ef1eb780b4.png)
+Terdapat 2 buah branch karena tadi sudah ditambahkan satu buah branch lain. Untuk pindah ke branch lain perintah nya yaitu :
+
+git checkout <nama branch lain>
+![12_LKutBUmJdNsm57WBpVzBCQ](https://user-images.githubusercontent.com/72791776/96332682-9c163180-108f-11eb-8e22-523e69210b58.png)
+Gambar diatas merupakan perpindahan dari branch master ke branch edit_cecep. Lalu kita rubah README nya dan lakukan langkah — langkah sebelumnya untuk merubah atau commit.
+![13_vBP4wTk9sl6sEtuzLxQsvg](https://user-images.githubusercontent.com/72791776/96332683-9caec800-108f-11eb-853c-7382992e005c.png)
+Bisa dilihat pada bagian bawah telah dirubah dengan ditambahkan kata-kata lain. Selain itu saya mencoba untuk membuat branch lain dengan nama edit. Kemudian mengedit dengan menambahkan beberapa kalimat dan di commit.
+![14_gLJ_XEux_tFoS3St6NYmEA](https://user-images.githubusercontent.com/72791776/96332685-9ddff500-108f-11eb-8902-bc026c80030b.png)
+Kedua branch tersebut diibaratkan dikerjakan oleh dua developer yang berbeda maka ketika selesai maka akan di jadikan satu dengan perintah :
+
+git merge <nama branch>
+
+Misalkan kan tadi terdapat 2 buah branch yang pertama yaitu edit_cecep dan yang kedua yaitu yaitu edit. Ketika akan melakukan merge maka kita pindah dulu dari branch edit ke branch edit_cecep kemudian masukan perintah diatas. Maka branch edit_cecep akan di merge dengan branch edit.
+![15_b9938H9jl85o9g6rOLW78g](https://user-images.githubusercontent.com/72791776/96332686-9e788b80-108f-11eb-8c37-43252cc7cae7.png)
+Kalo ingin merge ke master juga sama saja caranya dengan yang tadi. Dengan pertama checkout ke master lalu merge dari edit_cecep ke master.
+![16_aau03IGv6r9Juj97zx8AIw](https://user-images.githubusercontent.com/72791776/96332688-a0424f00-108f-11eb-8f22-4aba1a7b6892.png)
+Yang terakhir yaitu perintah untuk membuat clone dari projek yang telah dibuat:
+git clone <https://github.com/repo-name/proj-name.git> #http yang ada di github sesuai dengan program yang di remote
+
 
 
 
