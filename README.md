@@ -62,6 +62,9 @@ Berikut ini adalah tampilan proses instalasi Git. Tunggu hingga proses selesai d
 Setelah proses instalasi selesai, Anda perlu mengecek apakah instalasi Git berhasil atau tidak. Anda bisa mengeceknya melalui Command Prompt. Klik Win+R lalu ketik CMD untuk membuka Command Prompt seperti di bawah ini.
 ![Screenshot_13](https://user-images.githubusercontent.com/72791776/95843126-8a701980-0d71-11eb-94eb-d265f7bb253f.png)
 
+# Cara Penggunaan Git
+
+
 
 
 
